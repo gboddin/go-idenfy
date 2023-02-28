@@ -5,7 +5,7 @@ import (
 	"context"
 	"crypto/hmac"
 	"crypto/sha256"
-	"encoding/base64"
+	"encoding/hex"
 	"encoding/json"
 	"errors"
 	"fmt"
@@ -73,7 +73,7 @@ func (c *Client) DecodeReaderIdentityCallback(reader io.Reader, sigHeader string
 	if len(c.callbackSignKey) < 1 {
 		return nil, errors.New("callback was received but no signature key was provided")
 	}
-	sig, err := base64.StdEncoding.DecodeString(sigHeader)
+	sig, err := hex.DecodeString(sigHeader)
 	if err != nil {
 		return nil, err
 	}
@@ -126,8 +126,7 @@ func WithCustomEndpoint(endpoint string) ClientOption {
 // WithCallbackSignatureKey Option is used to specify a callback signature key to verify requests signatures
 func WithCallbackSignatureKey(key string) ClientOption {
 	return func(client *Client) (err error) {
-
-		client.callbackSignKey, err = base64.StdEncoding.DecodeString(key)
+		client.callbackSignKey = []byte(key)
 		return
 	}
 }

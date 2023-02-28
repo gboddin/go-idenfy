@@ -3,7 +3,7 @@ package main
 import (
 	"crypto/hmac"
 	"crypto/sha256"
-	"encoding/base64"
+	"encoding/hex"
 	"fmt"
 	"io"
 	"log"
@@ -18,7 +18,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	key, err := base64.StdEncoding.DecodeString(os.Args[2])
+	key := []byte(os.Args[2])
 	if err != nil {
 		panic(err)
 	}
@@ -27,5 +27,5 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	fmt.Printf("Signature: %s", base64.StdEncoding.EncodeToString(mac.Sum(nil)))
+	fmt.Printf("Signature: %s", hex.EncodeToString(mac.Sum(nil)))
 }
