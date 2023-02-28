@@ -2,6 +2,7 @@
 # Idenfy Golang Library
 
 [![GitHub Release](https://img.shields.io/github/v/release/gboddin/go-idenfy)](https://github.com/gboddin/go-idenfy/releases)
+![test status](https://github.com/gboddin/go-idenfy/actions/workflows/go.yml/badge.svg)
 [![Follow on Twitter](https://img.shields.io/twitter/follow/gboddin.svg?logo=twitter)](https://twitter.com/gboddin)
 
 Idenfy Golang is a Golang library for requesting and receiving verifications from the Idenfy API.
