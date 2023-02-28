@@ -6,8 +6,8 @@ type IdentityCallbackResp struct {
 	Status          Status            `json:"status"`
 	Data            Data              `json:"data"`
 	FileUrls        map[string]string `json:"fileUrls"`
-	AML             []AML             `json:"aml"`
-	LID             LID               `json:"lid"`
+	AML             []AML             `json:"AML"`
+	LID             []LID             `json:"LID"`
 	ScanRef         string            `json:"scanRef"`
 	ExternalRef     string            `json:"externalRef"`
 	ClientId        string            `json:"clientId"`

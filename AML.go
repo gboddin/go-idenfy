@@ -1,12 +1,12 @@
 package idenfy
 
 type AML struct {
-	Status           ServiceStatus `json:"status"`
-	Data             []interface{} `json:"data"`
-	ServiceName      string        `json:"serviceName"`
-	ServiceGroupType string        `json:"serviceGroupType"`
-	Uid              string        `json:"uid"`
-	ErrorMessage     string        `json:"errorMessage"`
+	Status           ServiceStatus            `json:"status"`
+	Data             []map[string]interface{} `json:"data"`
+	ServiceName      string                   `json:"serviceName"`
+	ServiceGroupType string                   `json:"serviceGroupType"`
+	Uid              string                   `json:"uid"`
+	ErrorMessage     string                   `json:"errorMessage"`
 }
 
 type ServiceStatus struct {

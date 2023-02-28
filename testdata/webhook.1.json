@@ -1,0 +1,109 @@
+{
+  "clientId": "123",
+  "scanRef": "scan-ref",
+  "externalRef": "external-ref",
+  "platform": "MOBILE_APP",
+  "startTime": 1554726960,
+  "finishTime": 1554727002,
+  "clientIp": "192.0.2.0",
+  "clientIpCountry": "LT",
+  "clientLocation": "Kaunas, Lithuania",
+  "final": false,
+  "status": {
+    "overall": "APPROVED",
+    "suspicionReasons": [],
+    "mismatchTags": [],
+    "fraudTags": [],
+    "autoDocument": "DOC_VALIDATED",
+    "autoFace": "FACE_MATCH",
+    "manualDocument": "DOC_VALIDATED",
+    "manualFace": "FACE_MATCH",
+    "additionalSteps": null
+  },
+  "data": {
+    "docFirstName": "FIRST-NAME-EXAMPLE",
+    "docLastName": "LAST-NAME-EXAMPLE",
+    "docNumber": "XXXXXXXXX",
+    "docPersonalCode": "XXXXXXXXX",
+    "docExpiry": "YYYY-MM-DD",
+    "docDob": "YYYY-MM-DD",
+    "docDateOfIssue": "2018-03-02",
+    "docType": "ID_CARD",
+    "docSex": "UNDEFINED",
+    "docNationality": "LT",
+    "docIssuingCountry": "LT",
+    "docTemporaryAddress": null,
+    "docBirthName": null,
+    "birthPlace": "BIRTH PLACE",
+    "authority": "AUTHORITY EXAMPLE",
+    "address": "ADDRESS EXAMPLE",
+    "fullName": "FULL-NAME-EXAMPLE",
+    "selectedCountry": "LT",
+    "mothersMaidenName": null,
+    "driverLicenseCategory": null,
+    "manuallyDataChanged": false,
+    "orgFirstName": "FIRST-NAME-EXAMPLE",
+    "orgLastName":  "LAST-NAME-EXAMPLE",
+    "orgNationality": "LIETUVOS",
+    "orgBirthPlace": "ŠILUVA",
+    "orgAuthority": null,
+    "orgAddress": null,
+    "orgTemporaryAddress": null,
+    "orgMothersMaidenName": null,
+    "orgBirthName": null,
+    "ageEstimate": "OVER_25",
+    "clientIpProxyRiskLevel": "LOW",
+    "duplicateDocFaces": null,
+    "duplicateFaces": null,
+    "additionalData": {
+      "UTILITY_BILL": {
+        "ssn": {
+          "value": "ssn number",
+          "status": "MATCH"
+        }
+      }
+    },
+    "manualAddress": null,
+    "manualAddressMatch": false,
+    "registryCenterCheck": null,
+    "addressVerification": null
+  },
+  "fileUrls": {
+    "FRONT": "https://s3.eu-west-1.amazonaws.com/production.users.storage/users_storage/users/<HASH>/FRONT.png?AWSAccessKeyId=<KEY>&Signature=<SIG>&Expires=<STAMP>",
+    "BACK": "https://s3.eu-west-1.amazonaws.com/production.users.storage/users_storage/users/<HASH>/BACK.png?AWSAccessKeyId=<KEY>&Signature=<SIG>&Expires=<STAMP>",
+    "FACE": "https://s3.eu-west-1.amazonaws.com/production.users.storage/users_storage/users/<HASH>/FACE.png?AWSAccessKeyId=<KEY>&Signature=<SIG>&Expires=<STAMP>"
+  },
+  "additionalStepPdfUrls": {},
+  "AML": [
+    {
+      "status": {
+        "serviceSuspected": false,
+        "checkSuccessful": true,
+        "serviceFound": true,
+        "serviceUsed": true,
+        "overallStatus": "NOT_SUSPECTED"
+      },
+      "data": [],
+      "serviceName": "PilotApiAmlV2",
+      "serviceGroupType": "AML",
+      "uid": "OHT8GR5ESRF5XROWE5ZGCC123",
+      "errorMessage": null
+    }
+  ],
+  "LID": [
+    {
+      "status": {
+        "serviceSuspected": false,
+        "checkSuccessful": true,
+        "serviceFound": true,
+        "serviceUsed": true,
+        "overallStatus": "NOT_SUSPECTED"
+      },
+      "data": [],
+      "serviceName": "IrdInvalidPapers",
+      "serviceGroupType": "LID",
+      "uid": "OHT8GR5ESRF5XROWE5ZGCC123",
+      "errorMessage": null
+    }
+  ]
+}
