@@ -16,7 +16,7 @@ Idenfy Golang is a Golang library for requesting and receiving verifications fro
 
 ## Missing
 
-- Proper AML detailed service report
+- Proper AML detailed service report, currently passed as `[]map[string]interface{}`
 - Anything not related to session creation/validation
 
 ## Usage
