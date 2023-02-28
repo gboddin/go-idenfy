@@ -56,7 +56,7 @@ func (c *Client) CreateIdentityVerificationSession(ctx context.Context, request 
 		return nil, err
 	}
 	defer resp.Body.Close()
-	if resp.StatusCode != 201 {
+	if resp.StatusCode != 201 && resp.StatusCode != 200 {
 		return nil, ErrServerError
 	}
 	var response TokenResponse
