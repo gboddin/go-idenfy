@@ -1,4 +1,3 @@
-# INCOMPLETE, WORK IN PROGRESS
 # Idenfy Golang Library
 
 [![GitHub Release](https://img.shields.io/github/v/release/gboddin/go-idenfy)](https://github.com/gboddin/go-idenfy/releases)
