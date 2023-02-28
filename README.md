@@ -15,6 +15,8 @@ Idenfy Golang is a Golang library for requesting and receiving verifications fro
 
 ## Usage
 
+See the [Go documentation](https://pkg.go.dev/github.com/gboddin/go-idenfy) for more details.
+
 ### Request verification token
 
 ```golang
